@@ -7,3 +7,5 @@ Comprenant les solutions aux exercices sur :
 - les strings operators
 - les loops
 - les functions
+
+Voilà
