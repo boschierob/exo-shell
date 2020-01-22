@@ -2,7 +2,7 @@
 # Change this code
 BIRTHDATE="Jan 1, 2000"
 Presents=10
-BIRTHDAY=`date -d "$BIRTHDATE" +%A`
+BIRTHDAY=`date -j -f '%b %d, %Y' "${BIRTHDATE}" +%A`
 
 
 # Testing code - do not change it
@@ -17,9 +17,10 @@ if [ $Presents == 10 ] ; then
 else
     echo "Presents is incorrect - please retry"
 fi
-if [ "$BIRTHDAY" == "Saturday" ] ; then
+if [ "$BIRTHDAY" == "Samedi" ] ; then
     echo "Je suis né un $BIRTHDAY"
 else
     echo "BIRTHDAY is incorrect - please retry"
 fi
 
+#commit
